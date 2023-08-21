@@ -1,0 +1,30 @@
+export const heroesData = [
+    // {
+    //     title: 'Guerrier',
+    //     hp: 200,
+    //     mana: 50,
+    //     atk: 25,
+    //     def: 50,
+    //     id: 'guerrier',
+    //     level: 1,
+    // },
+    {
+        title: 'Mage',
+        hp: 120,
+        mana: 200,
+        atk: 50,
+        def: 15,
+        id: 'Wizard',
+        level: 1,
+        xp: 0,
+    },
+    // {
+    //     title: 'Archer',
+    //     hp: 150,
+    //     mana: 120,
+    //     atk: 35,
+    //     def: 25,
+    //     id: 'Archer',
+    //     level: 1,
+    // },
+];

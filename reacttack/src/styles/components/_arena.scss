@@ -1,0 +1,114 @@
+.arena {
+    height: 800px;
+    width: 80%;
+    background: url('../../../public/images/green-mountain-landscape-big.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    border: 5px black solid;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .btn {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: -40px;
+        left: 15%;
+        .btn-attack, .btn-attack2 {
+            cursor: pointer;
+        }
+    }
+    .infos-player {
+        position: absolute;
+        bottom: -120px;
+        left: 5%;
+    }
+    .stats-player {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        bottom: -200px;
+        left: 15%;
+        .dps {
+            display: flex;
+            gap: 10px;
+            img {
+                height: 20px;
+            }
+        }
+        .health-bar {
+            width: 200px;
+            height: 20px;
+            border: 1px solid #000;
+            background-color: pink;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .health-bar-progress {
+            height: 100%;
+            background-color: #f00;
+        }
+        .mana-bar {
+            width: 200px;
+            height: 20px;
+            border: 1px solid #000;
+            background-color: aquamarine;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .mana-bar-progress {
+            height: 100%;
+            background-color: blue;
+        }    
+    }
+    .stats-monster {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        .health-bar {
+            width: 200px;
+            height: 20px;
+            border: 1px solid #000;
+            background-color: pink;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .health-bar-progress {
+            height: 100%;
+            background-color: #f00;
+        }
+    }
+    .info-combat {
+        position: absolute;
+        bottom: -280px;
+        font-size: 1.6rem;
+    }
+    .outcome {
+        background: url('../../../public/assets/scroll.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        top: 20%;
+        padding: 200px 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        transition: 1s;
+        font-family: 'font-1';
+        text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.3), 10px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
